@@ -1,0 +1,24 @@
+Overall objective:
+Provide the fastest algorithm you can design that indicates whether a point is within a city's borders on a 2-dimensional grid (X and Y axes)
+
+Inputs:
+Two CSV files:
+- cities.csv: contains 5 columns: city name, top-left coordinate X, top-left coordinate Y, bottom-right coordinate X, bottom-right coordinate Y
+- points.csv: contains 3 columns: point ID, coordinate X, coordinate Y
+
+Please see example files within Github repository
+
+Coordinates provided assume a 2-D map, with points in (X,Y) notation with X being the horizontal axis and Y the vertical axis. Please see explanation.jpg for visualization
+
+
+Outputs expected:
+- output_points.csv: contains a 4th colum with:
+   - if the point is part of or touches a city: the city name
+   - if the point is not part of a city: "None"
+
+
+Assumptions you can make:
+- Cities are rectangular and without rotation. I.e. they are completely identifiable via top-left coordinate and bottom-right coordinate
+- If a point touches a city (even a corner), then it is considered part of the city. For example point (2,2) is part of city (2,2)-(4,3)
+- All coordinates are positive integers: no negative numbers nor decimals
+- There can be an unlimited number of cities provided as input
